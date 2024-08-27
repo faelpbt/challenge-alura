@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <main class="content">
+
+        <section class="content-code">
+
+            <img src="./assets/logo.png" alt="logo">
+
+            <div class="content-text">
+
+                <textarea 
+                    class="content-text-area"
+                    placeholder="Digite seu texto" 
+                    maxlength="150"
+                    id="textcode" 
+                    cols="5" 
+                    rows="5"
+                ></textarea>
+        
+                <div class="content-text-messege">
+                    <p 
+                        class="content-text-alert"
+                        id="mensagem-erro"
+                        >
+                    </p>
+
+                </div>
+        
+                <div class="content-text-buttons">
+        
+                    <button onclick="btnCriptografar()" class="button-one">
+                        Criptografar
+                    </button>
+        
+                    <button onclick="btnDescriptografar()" class="button-two">
+                        Descriptografar
+                    </button>
+        
+                </div>
+
+            </div>
+    
+        </section>
+    
+        <section class="content-answer" id="content-answer">
+
+            <img 
+                class="content-answer-img"
+                src="./assets/looking.png" 
+                alt="looking-messenge"
+            >
+
+            <div class="content-answer-messege">
+
+                <h2 class="content-answer-title">
+                    Nenhuma mensagem encontrada
+                </h2>
+
+                <p class="content-answer-text">
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="content-response" id="content-response">
+
+            <div class="content-response-text">
+
+                <textarea 
+                    class="content-text-answer"
+                    id="input-mensagem" 
+                    cols="5" 
+                    rows="5"
+                ></textarea>
+
+                <button onclick="Copiar()" class="button-two button-copy">Copiar</button>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
